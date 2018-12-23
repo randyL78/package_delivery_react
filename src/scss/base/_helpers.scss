@@ -8,3 +8,19 @@
   }
 }
 
+.page-limited {
+  @extend %page-limiter;
+}
+
+// creates a set of classes that add a specified background color
+.bg {
+  @include colorizer(background-color);
+}
+
+// creates a set of classes that add a specified text color
+.text {
+  @include colorizer(color);
+}
+
+
+

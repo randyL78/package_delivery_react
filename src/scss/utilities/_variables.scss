@@ -9,6 +9,19 @@ $color-danger     : #CC5294;
 $color-text-light : lighten($color-primary, 45%);
 $color-text-dark  : darken($color-secondary, 30%);
 
+// convert colors into a map to use in helper functions
+$color: (
+  primary     : $color-primary,
+  secondary   : $color-secondary,
+  info        : $color-info,
+  success     : $color-success,
+  warning     : $color-warning,
+  danger      : $color-danger,
+  "gray"      : #555, 
+  "white"     : lighten($color-primary, 45%),
+  "black"     : black
+);
+
 
 // breakpoints
 $breakpoints: (

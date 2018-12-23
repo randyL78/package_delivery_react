@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
 // Custom imports
 import './css/App.css';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
             <Route exact path="/view" render={() => <h1>View</h1>} />
             <Route exact path="/add" render={() => <h1>Add</h1>} />
           </Switch>
+          <Footer />
         </div>
       </BrowserRouter>
     );

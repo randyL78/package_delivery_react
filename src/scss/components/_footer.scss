@@ -1,0 +1,16 @@
+.footer {
+  &-fixed {
+    padding: 0.5em;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: $font-stack-headline;
+      font-weight: bold;
+      font-size: .75em;
+    }
+  }
+}

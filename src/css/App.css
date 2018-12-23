@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto");
-.header_page-limiter {
+.page-limited, .header_page-limiter {
   margin-left: auto;
   margin-right: auto; }
 
 @media screen and (min-width: 800px) {
-  .header_page-limiter {
+  .page-limited, .header_page-limiter {
     max-width: 1000px; } }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -319,6 +319,44 @@ template {
   .spacer {
     flex-grow: 1; } }
 
+.bg-primary {
+  background-color: #39b4c1; }
+.bg-secondary {
+  background-color: #0071bc; }
+.bg-info {
+  background-color: #789399; }
+.bg-success {
+  background-color: #80FFC5; }
+.bg-warning {
+  background-color: #FAFF32; }
+.bg-danger {
+  background-color: #CC5294; }
+.bg-gray {
+  background-color: #555; }
+.bg-white {
+  background-color: #e7f6f8; }
+.bg-black {
+  background-color: black; }
+
+.text-primary {
+  color: #39b4c1; }
+.text-secondary {
+  color: #0071bc; }
+.text-info {
+  color: #789399; }
+.text-success {
+  color: #80FFC5; }
+.text-warning {
+  color: #FAFF32; }
+.text-danger {
+  color: #CC5294; }
+.text-gray {
+  color: #555; }
+.text-white {
+  color: #e7f6f8; }
+.text-black {
+  color: black; }
+
 * {
   font-family: "Roboto", sans-serif; }
 
@@ -424,5 +462,18 @@ h1, h2, h3, h4, h5, h6, blockquote, .headline {
     color: #e7f6f8; }
   .nav_link:hover {
     color: #d4eff2; }
+
+.footer-fixed {
+  padding: 0.5em;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+  .footer-fixed p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: .75em; }
 
 /*# sourceMappingURL=App.css.map */
