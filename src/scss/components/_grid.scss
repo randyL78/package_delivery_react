@@ -1,0 +1,24 @@
+.grid {
+  &_container {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}
+
+
+.col {
+  @for $i from 1 through 12 {
+    $content-width: #{$i / 12 * 100%};
+    &-#{$i} {
+      width: 100%;
+      min-height: 15px;
+      padding-left: 15px;
+      padding-right: .15px;
+      @include mq(small) {
+        max-width: $content-width;
+        flex: 0 0 $content-width;
+      }
+    }
+  }
+}

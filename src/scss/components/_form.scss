@@ -1,0 +1,24 @@
+.form {
+  &-field {
+    display: block;
+    width: 100%;
+    padding: .5em;
+    border-radius: 5px;
+    border: 1px solid darken($color-text-light, 15%);
+    margin-top: .5em;
+  }
+}
+
+.button {
+  @each $color, $value in $color {
+    &-#{$color} {
+      background-color: $value;
+      padding: .5em 1em;
+      margin-top: .75em; 
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  }
+}

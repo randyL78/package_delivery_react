@@ -7,8 +7,14 @@
 
 * {
   font-family: $font-stack-primary;
+
+  &, ::before, &::after {
+    box-sizing: border-box;
+  }
 }
 
 h1, h2, h3, h4, h5, h6, blockquote, .headline {
   font-family: $font-stack-headline;
+  line-height: 1.35em;
 }
+
