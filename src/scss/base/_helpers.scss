@@ -1,0 +1,10 @@
+.hidden {
+  display: none;
+}
+
+.spacer {
+  @include mq {
+    flex-grow: 1;
+  }
+}
+

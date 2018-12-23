@@ -1,0 +1,13 @@
+
+// apply flexbox settings
+@mixin flexy() {
+  
+}
+
+
+// media query mixin 
+@mixin  mq($breakpoint: medium) {
+  @media screen and (min-width: #{ map-get($breakpoints, $breakpoint) }) {
+    @content;
+  }  
+}

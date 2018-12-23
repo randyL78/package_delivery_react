@@ -1,0 +1,63 @@
+.header {
+  color: $color-text-light;
+  background-color: $color-primary;
+  &_page-limiter {
+    display: flex;
+    align-items: center;
+    @extend %page-limiter;
+    padding: 0.5em;
+    @include mq(small) {
+      padding: 0.55em 0.5em;
+    }
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+
+  &_logo {
+    width: 45px;
+    margin-right: .25em;
+
+    &-svg{
+
+      .logo {
+
+        &-blue {
+          fill: $color-secondary;
+        }
+  
+        &-tire-inner {
+          fill:gray;
+          stroke:#000;
+          stroke-miterlimit:10;
+          stroke-width:7px
+        }
+  
+        &-tire-outer {
+          fill:#333
+        }
+  
+        &-yellow {
+          fill: $color-warning;
+          stroke: #000; 
+          stroke-miterlimit:10; 
+          stroke-width: 3
+        }
+
+        &-window {
+          stroke: #000;
+          stroke-miterlimit: 10;
+          stroke-width: 7;
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  &_headline {
+    font-size: 18px;
+    margin: 0 .25em;
+  }
+}

@@ -1,0 +1,80 @@
+.nav {
+  &_hamburger {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    @include mq(small) {
+      display: block;
+    }
+
+    &-dropdown {
+      position: absolute;
+      top: 3em;
+      left: 0;
+      right: 0;
+      background-color: $color-primary;
+      z-index: 100;
+      @include mq(small) {
+        position: initial;
+        display: flex;
+        justify-content: space-between;
+      }
+      &.collapsed {
+        display: none;
+        @include mq(small) {
+          display: flex;
+          height: initial;
+        }
+      }
+    }
+  }
+
+  &_icon {
+    width: 20px;
+    padding: .35em .75em .25em;
+    border-radius: 5px;
+    border: 1px solid darken($color-text-light, 15%);
+    color: darken($color-text-light, 15%);
+    border-color: $color-text-light;
+    transition: border-color $transition-fast, color $transition-fast;
+    @include mq(small) {
+      display: none;
+    }
+
+    &:hover, &.active {
+      color: $color-text-light;
+ 
+    }
+
+    &-bar {
+      fill: currentColor;
+    }
+  }
+
+  &_list {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding-left: .5em;
+
+    @include mq(small) {
+      display: flex;
+    }
+  }
+  &_link {
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: .5em;
+    color: darken($color-text-light, 15%);
+    transition: color $transition-fast;
+
+    &.active, &.active:hover {
+      color: $color-text-light;
+    }
+
+    &:hover {
+      color: darken($color-text-light, 5%);
+    }
+  }
+}

@@ -1,0 +1,31 @@
+
+// Color Scheme Base
+$color-primary    : #39b4c1; //darken(#52C0CC, 7%);
+$color-secondary  : #0071bc; // #108B99;
+$color-info       : #789399;   
+$color-success    : #80FFC5;
+$color-warning    : #FAFF32;  // #FFC0C2;
+$color-danger     : #CC5294;
+$color-text-light : lighten($color-primary, 45%);
+$color-text-dark  : darken($color-secondary, 30%);
+
+
+// breakpoints
+$breakpoints: (
+  x-small : 400px,
+  small   : 600px,
+  medium  : 800px,
+  large   : 1000px,
+  x-large : 1200px
+);
+
+// fonts
+$font-url: ('https://fonts.googleapis.com/css?family=Montserrat|Roboto');
+$font-stack-primary: 'Roboto', sans-serif;
+$font-stack-headline: 'Montserrat', sans-serif;
+
+// Maximum viewable width of the page elements
+$page-width: map-get($map: $breakpoints, $key: large);
+
+// transitions
+$transition-fast: .3s ease-in;

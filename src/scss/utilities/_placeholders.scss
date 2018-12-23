@@ -1,0 +1,11 @@
+%centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%page-limiter {
+  @extend %centered;
+  @include mq {
+    max-width: $page-width;
+  }
+}
